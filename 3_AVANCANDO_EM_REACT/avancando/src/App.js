@@ -1,12 +1,12 @@
 //components
 import ManageData from './components/ManageData';
+import ListRender from './components/ListRender';
 
 // style
 import './App.css';
 
 // imagem
 import City from "./assets/city.jpg";
-
 
 function App() {
   return (
@@ -26,8 +26,11 @@ function App() {
       <div>
         <ManageData />
       </div>
-      
 
+      <div>
+        <ListRender />
+      </div>
+      
     </div>
   );
 }
