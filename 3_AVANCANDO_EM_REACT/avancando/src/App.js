@@ -11,6 +11,7 @@ import './App.css';
 // imagem
 import City from "./assets/city.jpg";
 import ShowUserName from './components/ShowUserName';
+import CarDetails from './components/CarDetails';
 
 function App() {
 
@@ -45,6 +46,10 @@ function App() {
 
       <div>
         <ShowUserName name={userName} />
+      </div>
+
+      <div>
+        <CarDetails brand="GM" km="10 mil" color="black" />
       </div>
       
     </div>
