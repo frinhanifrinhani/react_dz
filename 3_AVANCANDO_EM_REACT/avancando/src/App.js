@@ -13,6 +13,7 @@ import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionalRender';
 import Fragment from './components/Fragment';
+import Container from './components/Container';
 
 function App() {
 
@@ -72,6 +73,15 @@ function App() {
 
       {/* fragment */}
       <Fragment titulo="Terceiro título" />
+
+      {/* Container */}
+      <Container myProp="Segundo título">
+        <p>Childre container</p>
+      </Container>
+
+      <Container myProp="Terceiro título">
+        <p>Childre container replicado</p>
+      </Container>
       
     </div>
   );
