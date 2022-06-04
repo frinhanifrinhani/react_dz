@@ -14,6 +14,7 @@ import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionalRender';
 import Fragment from './components/Fragment';
 import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
 
 function App() {
 
@@ -24,7 +25,11 @@ function App() {
     {id: 1 , brand: "Ferrari", color: "Amarela", newCar: true, km: 0},
     {id: 2, brand: "KIA", color: "Branco", newCar: false , km:  3400},
     {id: 3, brand: "Renault", color: "Azul", newCar:  false, km: 2330}
-  ]
+  ];
+
+  function showMessage() {
+    console.log("Evento do componente pai!");
+  } 
 
   return (
     <div className="App">
@@ -68,7 +73,7 @@ function App() {
 
       {/* loop em array de objetos */} 
       {cars.map((car) => (
-        <CarDetails brand={car.brand} color={car.color} km={car.km} newCar={car.newCar} />
+        <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km} newCar={car.newCar} />
       ))}
 
       {/* fragment */}
@@ -82,6 +87,9 @@ function App() {
       <Container myProp="Terceiro título">
         <p>Childre container replicado</p>
       </Container>
+
+      {/* Executando função */}
+      <ExecuteFunction myFunction={showMessage}/>
       
     </div>
   );
