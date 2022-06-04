@@ -1,12 +1,12 @@
-const UserDetails = ({name, age, profession}) => {
+const UserDetails = ({key,name, age, profession}) => {
 
   return (
     <div>
         <ul>
-            <li>Nome: {name}</li>
-            <li>Idade: {age}</li>
-            <li>Profissão: {profession}</li>
-            <li>{age >=18 && <span>Pode tirar habilitação</span> }</li>
+            <li key={key}>Nome: {name}</li>
+            <li key={key}>Idade: {age}</li>
+            <li key={key}>Profissão: {profession}</li>
+            <li key={key}>{age >=18 && <span>Pode tirar habilitação</span> }</li>
         </ul>
     </div>
   )
