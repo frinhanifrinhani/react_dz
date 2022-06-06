@@ -3,3 +3,8 @@ body {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.boxes{
+  display: flex;
+  justify-content: center;
+}

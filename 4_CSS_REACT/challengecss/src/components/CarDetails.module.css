@@ -1,8 +1,6 @@
-
 .box{
    text-align: left;
-   margin-left: 450px; 
-   margin-right: 450px; 
+   margin: 10px; 
    margin-bottom: 25px;
    border: 1px solid gray;
    border-radius: 10px;
