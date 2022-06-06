@@ -5,12 +5,9 @@
    border: 1px solid gray;
    border-radius: 10px;
    background-color: gainsboro;
+   padding: 0px 15px;
    
 }
-
-.box p{
-    padding-left: 25px;
- }
 
  .box h5{
     padding-left: 25px;
